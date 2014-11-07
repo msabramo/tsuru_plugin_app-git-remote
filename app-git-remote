@@ -1,0 +1,3 @@
+#!/bin/sh
+
+tsuru app-info -"$@" | awk '/^Repository:/ { print $2 }'
